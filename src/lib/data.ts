@@ -10,6 +10,7 @@ export const SITE = {
   phone: "+961 81 491 228",
   email: "mouradalhassan2005@gmail.com",
   linkedin: "https://www.linkedin.com/in/mourad-al-hassan-095267275",
+  github: "https://github.com/mouradalhassan",
 };
 
 export const HERO = {

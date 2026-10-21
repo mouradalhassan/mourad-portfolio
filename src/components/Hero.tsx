@@ -67,6 +67,14 @@ export default function Hero() {
             >
               WhatsApp
             </a>
+            <a
+              href={SITE.github}
+              target="_blank"
+              rel="noopener"
+              className="btn btn-ghost"
+            >
+              GitHub
+            </a>
           </div>
 
           <dl

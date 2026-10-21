@@ -38,6 +38,14 @@ export default function Contact() {
             LinkedIn ↗
           </a>
           <a
+            href={SITE.github}
+            target="_blank"
+            rel="noopener"
+            className="btn btn-ghost"
+          >
+            GitHub ↗
+          </a>
+          <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener"
