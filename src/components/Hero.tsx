@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-center overflow-hidden pt-24 pb-16"
+      className="relative flex min-h-[100svh] items-center overflow-hidden pt-36 pb-16"
     >
       <div
         className="pointer-events-none absolute -top-40 right-[-10%] h-[40rem] w-[40rem] rounded-full opacity-40"
@@ -15,7 +15,16 @@ export default function Hero() {
         }}
         aria-hidden="true"
       />
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+
+      {/* corner labels: small, quiet, editorial */}
+      <p className="rise absolute top-[5.6rem] left-5 font-mono text-[0.66rem] tracking-[0.22em] text-fog uppercase sm:left-[6vw]">
+        Tripoli · Lebanon
+      </p>
+      <p className="rise absolute top-[5.6rem] right-5 hidden font-mono text-[0.66rem] tracking-[0.22em] text-fog uppercase sm:block sm:right-[6vw]">
+        Portfolio · 2026
+      </p>
+
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
         <div>
           <div className="rise inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-xs text-mist">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
@@ -24,21 +33,17 @@ export default function Hero() {
 
           <h1
             data-split
-            className="mt-7 text-[clamp(3.2rem,9vw,7.5rem)] leading-[0.92] font-extrabold tracking-tight"
+            className="mt-7 text-[clamp(2.6rem,5.9vw,5.5rem)] leading-[0.98] font-extrabold tracking-[-0.035em]"
           >
-            Mourad
+            I build websites
             <br />
-            <span className="serif-i text-accent">Al Hassan</span>
+            that <span className="serif-i text-accent">work,</span>
+            <br />
+            in English and Arabic.
           </h1>
 
           <p
-            className="rise mt-6 text-lg font-semibold sm:text-xl"
-            style={{ animationDelay: "0.16s" }}
-          >
-            {SITE.role}
-          </p>
-          <p
-            className="rise mt-3 max-w-xl leading-relaxed text-mist"
+            className="rise mt-7 max-w-xl text-lg leading-relaxed text-mist"
             style={{ animationDelay: "0.22s" }}
           >
             {HERO.bio}
@@ -105,8 +110,9 @@ export default function Hero() {
           style={{ animationDelay: "0.2s" }}
         >
           <Portrait />
-          <p className="mt-3 text-center font-mono text-[0.7rem] tracking-[0.2em] text-fog uppercase">
-            {SITE.location}
+          <p className="mt-3 flex items-center justify-between font-mono text-[0.66rem] tracking-[0.2em] text-fog uppercase">
+            <span>Move your cursor</span>
+            <span aria-hidden="true">↔</span>
           </p>
         </div>
       </div>

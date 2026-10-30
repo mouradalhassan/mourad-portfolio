@@ -7,7 +7,7 @@ export default function About() {
         <div className="grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
           <div>
             <div data-reveal>
-              <p className="eyebrow">About</p>
+              <p className="eyebrow">04 — About</p>
               <h2 data-split className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
                 Everything you saw
                 <br />

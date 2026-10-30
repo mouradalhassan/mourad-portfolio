@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
 import { RING } from "@/lib/ring";
+import Intro from "@/components/Intro";
+import Cursor from "@/components/Cursor";
 import "./globals.css";
 
 const inter = Inter({
@@ -61,6 +63,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-full">
         <div id="progress" aria-hidden="true" />
+        <Intro />
+        <Cursor />
         {children}
       </body>
     </html>

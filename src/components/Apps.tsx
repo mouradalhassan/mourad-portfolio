@@ -65,7 +65,7 @@ export default function Apps() {
     <section id="apps" className="relative py-24 sm:py-32" data-anim>
       <div className="mx-auto max-w-7xl px-5">
         <div data-reveal>
-          <p className="eyebrow">Mobile apps</p>
+          <p className="eyebrow">02 — Mobile apps</p>
           <h2 data-split className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
             And on your <span className="serif-i text-accent">phone.</span>
           </h2>

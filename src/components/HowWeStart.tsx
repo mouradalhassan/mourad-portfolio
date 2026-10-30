@@ -16,7 +16,7 @@ export default function HowWeStart() {
     <section id="process" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5">
         <div data-reveal>
-          <p className="eyebrow">Process</p>
+          <p className="eyebrow">05 — Process</p>
           <h2 data-split className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
             How we <span className="serif-i text-accent">start.</span>
           </h2>

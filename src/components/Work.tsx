@@ -215,7 +215,7 @@ export default function Work() {
       <div ref={track} className="will-change-transform lg:flex lg:h-screen lg:w-max">
         {/* intro panel */}
         <div className="px-5 pt-24 pb-6 lg:flex lg:h-screen lg:w-[70vw] lg:shrink-0 lg:flex-col lg:justify-center lg:p-0 lg:pl-[6vw]">
-          <p className="eyebrow">Selected work</p>
+          <p className="eyebrow">01 — Selected work</p>
           <h2 data-split className="mt-5 text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl lg:text-[7vw]">
             Real sites.
             <br />

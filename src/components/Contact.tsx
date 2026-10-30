@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="relative mx-auto max-w-7xl px-5">
         <div className="flex items-end justify-between gap-10" data-reveal>
           <div>
-            <p className="eyebrow">Contact</p>
+            <p className="eyebrow">06 — Contact</p>
             <h2 data-split className="mt-5 text-[clamp(2.8rem,8vw,7rem)] leading-[0.95] font-extrabold tracking-tight">
               Got a project
               <br />
