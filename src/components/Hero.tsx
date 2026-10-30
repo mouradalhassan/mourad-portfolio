@@ -1,103 +1,59 @@
 import { HERO, SITE } from "@/lib/data";
 import Portrait from "./Portrait";
 
+const STACK = ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Node.js", "Vercel", "Netlify", "Tailwind", "GSAP"];
+
 export default function Hero() {
   return (
-    <section
-      id="top"
-      className="relative flex min-h-[100svh] items-center overflow-hidden pt-36 pb-16"
-    >
-      <div
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[40rem] w-[40rem] rounded-full opacity-40"
-        style={{
-          background:
-            "radial-gradient(closest-side, rgba(255,77,61,0.35), transparent)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* corner labels: small, quiet, editorial */}
-      <p className="rise absolute top-[5.6rem] left-5 font-mono text-[0.66rem] tracking-[0.22em] text-fog uppercase sm:left-[6vw]">
-        Tripoli · Lebanon
-      </p>
-      <p className="rise absolute top-[5.6rem] right-5 hidden font-mono text-[0.66rem] tracking-[0.22em] text-fog uppercase sm:block sm:right-[6vw]">
-        Portfolio · 2026
-      </p>
-
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
-        <div>
-          <div className="rise inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-xs text-mist">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+    <section id="top" className="relative flex min-h-[100svh] flex-col overflow-hidden">
+      {/* split: name on the left, the character on a full-height colour panel */}
+      <div className="grid flex-1 lg:grid-cols-[1.25fr_0.75fr]">
+        <div className="relative flex flex-col justify-end px-5 pt-32 pb-10 sm:px-[5vw] lg:pt-40 lg:pb-16">
+          <p className="rise font-mono text-[0.7rem] tracking-[0.25em] text-fog uppercase">
             {HERO.status}
-          </div>
+          </p>
 
           <h1
             data-split
-            className="mt-7 text-[clamp(2.6rem,5.9vw,5.5rem)] leading-[0.98] font-extrabold tracking-[-0.035em]"
+            className="mt-6 text-[clamp(4.2rem,12vw,13rem)] leading-[0.82] font-black tracking-[-0.05em]"
           >
-            I build websites
+            Mourad
             <br />
-            that <span className="serif-i text-accent">work,</span>
-            <br />
-            in English and Arabic.
+            <span className="serif-i font-normal text-accent">Al Hassan</span>
           </h1>
 
-          <p
-            className="rise mt-7 max-w-xl text-lg leading-relaxed text-mist"
-            style={{ animationDelay: "0.22s" }}
-          >
+          <p className="rise mt-8 font-mono text-sm tracking-[0.12em] text-snow uppercase" style={{ animationDelay: "0.2s" }}>
+            Full stack developer <span className="text-accent">/</span> Tripoli, Lebanon
+          </p>
+
+          <p className="rise mt-5 max-w-xl text-base leading-relaxed text-mist sm:text-lg" style={{ animationDelay: "0.26s" }}>
             {HERO.bio}
           </p>
 
-          <div
-            className="rise mt-8 flex flex-wrap gap-3"
-            style={{ animationDelay: "0.3s" }}
-          >
+          <div className="rise mt-8 flex flex-wrap gap-3" style={{ animationDelay: "0.32s" }}>
             <a href="#work" className="btn btn-solid magnet">
               View work <span aria-hidden="true">↓</span>
             </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener"
-              className="btn btn-ghost magnet"
-            >
+            <a href="/resume.pdf" target="_blank" rel="noopener" className="btn btn-ghost magnet">
               Resume
             </a>
-            <a
-              href={`https://wa.me/${SITE.whatsapp}`}
-              target="_blank"
-              rel="noopener"
-              className="btn btn-ghost magnet"
-            >
+            <a href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener" className="btn btn-ghost magnet">
               WhatsApp
             </a>
-            <a
-              href={SITE.github}
-              target="_blank"
-              rel="noopener"
-              className="btn btn-ghost magnet"
-            >
+            <a href={SITE.github} target="_blank" rel="noopener" className="btn btn-ghost magnet">
               GitHub
             </a>
           </div>
 
-          <dl
-            className="rise mt-12 grid max-w-xl grid-cols-3 gap-5 border-t border-line pt-6"
-            style={{ animationDelay: "0.38s" }}
-          >
+          <dl className="rise mt-10 grid max-w-xl grid-cols-3 gap-5 border-t border-line pt-6" style={{ animationDelay: "0.4s" }}>
             {HERO.facts.map((f) => (
               <div key={f.v}>
                 {/^\d+\+$/.test(f.k) ? (
-                  <dt
-                    className="text-xl font-bold sm:text-2xl"
-                    data-count={parseInt(f.k, 10)}
-                    data-suffix="+"
-                  >
+                  <dt className="text-2xl font-bold" data-count={parseInt(f.k, 10)} data-suffix="+">
                     {f.k}
                   </dt>
                 ) : (
-                  <dt className="text-xl font-bold sm:text-2xl">{f.k}</dt>
+                  <dt className="text-2xl font-bold">{f.k}</dt>
                 )}
                 <dd className="mt-1 text-xs leading-snug text-fog">{f.v}</dd>
               </div>
@@ -105,16 +61,26 @@ export default function Hero() {
           </dl>
         </div>
 
-        <div
-          className="rise mx-auto w-full max-w-md"
-          style={{ animationDelay: "0.2s" }}
-        >
-          <Portrait />
-          <p className="mt-3 flex items-center justify-between font-mono text-[0.66rem] tracking-[0.2em] text-fog uppercase">
-            <span>Move your cursor</span>
-            <span aria-hidden="true">↔</span>
+        <div className="relative min-h-[60svh] overflow-hidden bg-[#9f1916] lg:min-h-0">
+          <div className="absolute inset-0">
+            <Portrait fill />
+          </div>
+          <p className="absolute bottom-5 left-5 z-10 font-mono text-[0.66rem] tracking-[0.22em] text-white/90 uppercase">
+            Move your cursor ↔
           </p>
         </div>
+      </div>
+
+      {/* stack ticker across the bottom edge */}
+      <div className="marquee border-t border-line py-4">
+        <ul className="marquee-track">
+          {[...STACK, ...STACK].map((t, i) => (
+            <li key={i} className="flex shrink-0 items-center gap-8 pr-8 font-mono text-sm tracking-[0.18em] text-mist uppercase whitespace-nowrap">
+              {t}
+              <span className="text-accent" aria-hidden="true">✦</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ const delta = (a: number, b: number) => ((b - a + 540) % 360) - 180;
  * mouse devices, and tracking starts with whatever poses are ready, using the
  * nearest loaded one. A plain <img> of the neutral pose is the first paint.
  */
-export default function Portrait() {
+export default function Portrait({ fill = false }: { fill?: boolean }) {
   const wrap = useRef<HTMLDivElement>(null);
   const inner = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -203,7 +203,11 @@ export default function Portrait() {
   return (
     <div
       ref={wrap}
-      className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-line"
+      className={
+        fill
+          ? "relative h-full w-full overflow-hidden"
+          : "relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-line"
+      }
       style={{ background: BACKGROUND }}
     >
       <div ref={inner} className="absolute inset-0 will-change-transform">
