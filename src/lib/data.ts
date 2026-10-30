@@ -192,6 +192,18 @@ export const PROJECTS: Project[] = [
     accent: "#d9d9e3",
     images: ["/projects/spoil-1.webp", "/projects/spoil-2.webp"],
   },
+  {
+    slug: "north-outlet",
+    title: "North Outlet",
+    category: "Store + orders + admin app",
+    year: "2026",
+    blurb: "An outlet store of original brands where every piece is one of one, with an admin app that alerts the owner.",
+    facts: ["One piece per item: sold items leave the store", "Admin app: orders, items, sales, push alerts", "English and Arabic, cash or Whish"],
+    tags: ["JavaScript", "Node.js", "PostgreSQL", "PWA", "Web Push"],
+    href: "https://north-outlet.vercel.app",
+    accent: "#faa31a",
+    images: ["/projects/north-outlet-1.webp", "/projects/north-outlet-2.webp"],
+  },
 ];
 
 export const NAV_LINKS = [
