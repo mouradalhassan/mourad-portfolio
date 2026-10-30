@@ -35,11 +35,9 @@ export default function Hero() {
             data-split
             className="mt-7 text-[clamp(2.6rem,5.9vw,5.5rem)] leading-[0.98] font-extrabold tracking-[-0.035em]"
           >
-            I build websites
+            Full stack,
             <br />
-            that <span className="serif-i text-accent">work,</span>
-            <br />
-            in English and Arabic.
+            from schema to <span className="serif-i text-accent">pixel.</span>
           </h1>
 
           <p
