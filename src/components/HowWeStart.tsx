@@ -17,7 +17,7 @@ export default function HowWeStart() {
       <div className="mx-auto max-w-7xl px-5">
         <div data-reveal>
           <p className="eyebrow">Process</p>
-          <h2 className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
+          <h2 data-split className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
             How we <span className="serif-i text-accent">start.</span>
           </h2>
         </div>

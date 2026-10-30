@@ -60,10 +60,7 @@ export default function RootLayout({
         ))}
       </head>
       <body className="min-h-full">
-        <div className="bg-fx" aria-hidden="true" />
-        <div className="bg-beam" aria-hidden="true" />
-        <div className="bg-lines" aria-hidden="true" />
-        <div className="bg-grain" aria-hidden="true" />
+        <div id="progress" aria-hidden="true" />
         {children}
       </body>
     </html>

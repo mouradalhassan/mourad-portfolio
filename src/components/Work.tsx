@@ -69,7 +69,7 @@ function Panel({ p, i }: { p: Project; i: number }) {
             <span className="live-dot" /> Live
           </span>
         )}
-        <div className="overflow-hidden rounded-xl border border-white/10 bg-ink-2 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.9)]">
+        <div className="tilt relative overflow-hidden rounded-xl border border-white/10 bg-ink-2 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.9)]">
           <div className="flex items-center gap-2 border-b border-line px-4 py-2.5">
             <i className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]/80" />
             <i className="h-2.5 w-2.5 rounded-full bg-[#febc2e]/80" />
@@ -216,7 +216,7 @@ export default function Work() {
         {/* intro panel */}
         <div className="px-5 pt-24 pb-6 lg:flex lg:h-screen lg:w-[70vw] lg:shrink-0 lg:flex-col lg:justify-center lg:p-0 lg:pl-[6vw]">
           <p className="eyebrow">Selected work</p>
-          <h2 className="mt-5 text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl lg:text-[7vw]">
+          <h2 data-split className="mt-5 text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl lg:text-[7vw]">
             Real sites.
             <br />
             <span className="serif-i text-accent">Real businesses.</span>

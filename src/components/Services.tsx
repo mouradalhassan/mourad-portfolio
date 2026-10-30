@@ -48,7 +48,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-5">
         <div data-reveal>
           <p className="eyebrow">What I can do for you</p>
-          <h2 className="mt-5 max-w-3xl text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
+          <h2 data-split className="mt-5 max-w-3xl text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
             From the first call
             <br />
             <span className="serif-i text-accent">to a live website.</span>

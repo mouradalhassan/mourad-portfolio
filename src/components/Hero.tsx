@@ -23,8 +23,8 @@ export default function Hero() {
           </div>
 
           <h1
-            className="rise mt-7 text-[clamp(3.2rem,9vw,7.5rem)] leading-[0.92] font-extrabold tracking-tight"
-            style={{ animationDelay: "0.08s" }}
+            data-split
+            className="mt-7 text-[clamp(3.2rem,9vw,7.5rem)] leading-[0.92] font-extrabold tracking-tight"
           >
             Mourad
             <br />
@@ -48,14 +48,14 @@ export default function Hero() {
             className="rise mt-8 flex flex-wrap gap-3"
             style={{ animationDelay: "0.3s" }}
           >
-            <a href="#work" className="btn btn-solid">
+            <a href="#work" className="btn btn-solid magnet">
               View work <span aria-hidden="true">↓</span>
             </a>
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener"
-              className="btn btn-ghost"
+              className="btn btn-ghost magnet"
             >
               Resume
             </a>
@@ -63,7 +63,7 @@ export default function Hero() {
               href={`https://wa.me/${SITE.whatsapp}`}
               target="_blank"
               rel="noopener"
-              className="btn btn-ghost"
+              className="btn btn-ghost magnet"
             >
               WhatsApp
             </a>
@@ -71,7 +71,7 @@ export default function Hero() {
               href={SITE.github}
               target="_blank"
               rel="noopener"
-              className="btn btn-ghost"
+              className="btn btn-ghost magnet"
             >
               GitHub
             </a>
@@ -83,7 +83,17 @@ export default function Hero() {
           >
             {HERO.facts.map((f) => (
               <div key={f.v}>
-                <dt className="text-xl font-bold sm:text-2xl">{f.k}</dt>
+                {/^\d+\+$/.test(f.k) ? (
+                  <dt
+                    className="text-xl font-bold sm:text-2xl"
+                    data-count={parseInt(f.k, 10)}
+                    data-suffix="+"
+                  >
+                    {f.k}
+                  </dt>
+                ) : (
+                  <dt className="text-xl font-bold sm:text-2xl">{f.k}</dt>
+                )}
                 <dd className="mt-1 text-xs leading-snug text-fog">{f.v}</dd>
               </div>
             ))}

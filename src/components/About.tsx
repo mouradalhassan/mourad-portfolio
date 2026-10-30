@@ -8,7 +8,7 @@ export default function About() {
           <div>
             <div data-reveal>
               <p className="eyebrow">About</p>
-              <h2 className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
+              <h2 data-split className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
                 Everything you saw
                 <br />
                 <span className="serif-i text-accent">is live.</span>

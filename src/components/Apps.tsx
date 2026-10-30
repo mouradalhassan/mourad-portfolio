@@ -62,11 +62,11 @@ function AppRow({ a, i }: { a: App; i: number }) {
 
 export default function Apps() {
   return (
-    <section id="apps" className="relative py-24 sm:py-32">
+    <section id="apps" className="relative py-24 sm:py-32" data-anim>
       <div className="mx-auto max-w-7xl px-5">
         <div data-reveal>
           <p className="eyebrow">Mobile apps</p>
-          <h2 className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
+          <h2 data-split className="mt-5 text-4xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
             And on your <span className="serif-i text-accent">phone.</span>
           </h2>
         </div>
