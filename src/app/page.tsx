@@ -6,6 +6,7 @@ import Apps from "@/components/Apps";
 import HowWeStart from "@/components/HowWeStart";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Effects from "@/components/Effects";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Services />
         <HowWeStart />
         <About />
+        <Resume />
         <Contact />
       </main>
       <Effects />

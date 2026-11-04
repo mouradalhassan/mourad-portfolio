@@ -211,5 +211,6 @@ export const NAV_LINKS = [
   { label: "Apps", href: "#apps" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
+  { label: "CV", href: "#cv" },
   { label: "Contact", href: "#contact" },
 ];
